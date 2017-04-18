@@ -14,6 +14,7 @@
 		9464F1A91E95BDAB00D6E2CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9464F1A71E95BDAB00D6E2CB /* LaunchScreen.storyboard */; };
 		9464F1B41E95BDAB00D6E2CB /* ssl_pinning_exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9464F1B31E95BDAB00D6E2CB /* ssl_pinning_exampleTests.swift */; };
 		9464F1BF1E95BDAB00D6E2CB /* ssl_pinning_exampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9464F1BE1E95BDAB00D6E2CB /* ssl_pinning_exampleUITests.swift */; };
+		9464F1CD1E95BDD300D6E2CB /* NSURLSessionPinningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9464F1CC1E95BDD300D6E2CB /* NSURLSessionPinningDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		9464F1BA1E95BDAB00D6E2CB /* ssl-pinning-exampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ssl-pinning-exampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9464F1BE1E95BDAB00D6E2CB /* ssl_pinning_exampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ssl_pinning_exampleUITests.swift; sourceTree = "<group>"; };
 		9464F1C01E95BDAB00D6E2CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9464F1CC1E95BDD300D6E2CB /* NSURLSessionPinningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLSessionPinningDelegate.swift; sourceTree = "<group>"; };
+		9464F1CF1E95C25100D6E2CB /* bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridging.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 		9464F1921E95BDAB00D6E2CB = {
 			isa = PBXGroup;
 			children = (
+				9464F1CF1E95C25100D6E2CB /* bridging.h */,
 				9464F19D1E95BDAB00D6E2CB /* ssl-pinning-example */,
 				9464F1B21E95BDAB00D6E2CB /* ssl-pinning-exampleTests */,
 				9464F1BD1E95BDAB00D6E2CB /* ssl-pinning-exampleUITests */,
@@ -103,6 +107,7 @@
 				9464F1A51E95BDAB00D6E2CB /* Assets.xcassets */,
 				9464F1A71E95BDAB00D6E2CB /* LaunchScreen.storyboard */,
 				9464F1AA1E95BDAB00D6E2CB /* Info.plist */,
+				9464F1CC1E95BDD300D6E2CB /* NSURLSessionPinningDelegate.swift */,
 			);
 			path = "ssl-pinning-example";
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 				TargetAttributes = {
 					9464F19A1E95BDAB00D6E2CB = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 7LJD5DCH7T;
 						ProvisioningStyle = Automatic;
 					};
 					9464F1AE1E95BDAB00D6E2CB = {
@@ -260,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9464F1A11E95BDAB00D6E2CB /* ViewController.swift in Sources */,
+				9464F1CD1E95BDD300D6E2CB /* NSURLSessionPinningDelegate.swift in Sources */,
 				9464F19F1E95BDAB00D6E2CB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,10 +421,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7LJD5DCH7T;
 				INFOPLIST_FILE = "ssl-pinning-example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bugsee.ssl-pinning-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = bridging.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -426,10 +435,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7LJD5DCH7T;
 				INFOPLIST_FILE = "ssl-pinning-example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bugsee.ssl-pinning-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = bridging.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
